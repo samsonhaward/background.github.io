@@ -7,15 +7,31 @@ body{
     align-items:center;
     font-family: 'Montserrat', sans-serif;
   }
-          .wrapper {
-      background: url(1.jpg);
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center center;
-      height: 500px;
-      width: 350px;
-      box-shadow: 0 15px 20px 5px rgba(0,0,0,0.5);
-  }
+  .wrapper {
+    background: url(Anders.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 350px;
+    box-shadow: 0 15px 20px 5px rgba(0,0,0,0.5);
+}.wrappers {
+  background: url(Kenny.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 350px;
+  box-shadow: 0 15px 20px 5px rgba(0,0,0,0.5);
+}.wrappers {
+  background: url(roy.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 350px;
+  box-shadow: 0 15px 20px 5px rgba(0,0,0,0.5);
+}
   .box {
       background: #262626;
       width: 330px;
