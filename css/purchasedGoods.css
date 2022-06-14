@@ -1,0 +1,458 @@
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #99cb33;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #d4d1d1;
+    --darkmode: #1f1e1e;
+    --darkmodePage: #0f0f0f;
+    --hover: rgb(44, 43, 43);
+    --border: rgb(56, 55, 55);
+    --insideDiv: rgb(37, 36, 36);
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+*{
+    font-family: monospace;
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+html, body{
+    height: fit-content;
+    background-color: var(--darkmodePage);
+}
+
+/*----------- Parent Body-------------*/
+.ghg_supply_body {
+    margin-left: 60px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    height: 100%; /* Defoult same height as screen */
+    background-color: var(--darkmodePage);
+}
+#ghg_header{
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkmodePage);
+    width: 100%;
+    padding: 20px 0px 10px;
+    padding-right: 80px;
+
+}
+
+/*----------- Directory Tracker -------------*/
+.directory_tracker{
+    display: flex;
+}
+.directory_tracker p{
+    padding: 3px;
+    color: var(--text-color);
+}
+.directory_tracker a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/*----------- Directory Tracker -------------*/
+.additional{
+    display: flex;
+
+}
+.additional .bars{
+    padding: 3px;
+}
+.bars p{
+    padding: 0px 3px 0px;
+    color: var(--text-color);
+}
+.additional .addChart{
+    border: solid 1px var(--border);
+}
+.additional .drop-main{
+    border: solid 1px var(--border);
+    display: flex;
+    cursor: pointer;
+}
+/*----------- Body Cover -------------*/
+
+/*----------- GHG Text -------------*/
+.drop-main{
+    position: relative;
+}
+.drop{
+    display: none;
+    position: absolute;
+    top: 33px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: var(--darkmode);
+    margin: 0;
+    right: 0px;
+    padding: 0px 3px;
+    width: max-content;
+
+}
+.drop-middle{
+
+    display: none;
+    position: absolute;
+    top: 33px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: var(--insideDiv);
+    margin: 0;
+    right: 0px;
+    padding: 0px 3px;
+    width: max-content;
+
+}
+.drop::before, .drop::after{
+    content: "";
+    position: absolute;
+    border: solid 10px transparent;
+    border-top: 0;
+    right: 0px;
+    border-bottom-color: var(--darkmode);
+    top: -10px;
+}
+.drop-middle::before, .drop-middle::after{
+    content: "";
+    position: absolute;
+    border: solid 10px transparent;
+    border-top: 0;
+    right: 0px;
+    border-bottom-color: var(--darkmode);
+    top: -10px;
+}
+.drop p{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+}
+.drop-middle p{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+}
+.drop-middle p:hover{
+    background-color: var(--darkmodePage);
+}
+
+.drop-main:hover .drop{
+    display: block;
+}
+.drop-main:hover .drop-middle{
+    display: block;
+}
+.drop-main p .fa-solid.fa-chevron-down{
+    font-size: 10px;
+}
+
+.click-drop{
+    position: absolute;
+    display: none;
+    background-color: var(--darkmode);
+    right: 0;
+    border: solid 1px var(--border);
+    top: 33px;
+    cursor: pointer;
+    z-index: 1;
+    margin-right: -15px;
+}
+
+.click-drop a{
+    text-decoration: none;
+}
+/*=================================================================================
+-----------------------------------------------------------------------------------
+==================================================================================*/
+.upper{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.spacer{
+    padding: 0px 3px;
+}
+.upperContent{
+    padding: 3px;
+    border: solid 1px var(--border);
+    border-radius: 3px;
+    padding: 0px 3px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.visuals{
+    padding: 5px;
+    border-radius: 3px;
+}
+.scope{
+    border-radius: 3px;
+    height: 300px;
+    border: solid 1px rgb(56, 55, 55);
+}
+.scope .visual{
+    background-color: var(--insideDiv);
+    border-radius: 3px;
+    height: 100%;
+}
+.visual header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.visual header p{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.visualization{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.visualization p{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.description{
+    border-radius: 3px;
+    height: 100%;
+    border: solid 1px rgb(56, 55, 55);
+}
+.visualDescription{
+    background-color: var(--insideDiv);
+    border-radius: 3px;
+    height: 100%;
+}
+.visualDescription header p{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.visualDescription main ul li{
+    color: var(--text-color);
+}
+
+/*=============================================*/
+#charts{
+    background-color: var(--darkmodePage);
+    width: 100%;
+    color: var(--text-color);
+    outline: none;
+    border: none;
+}
+/*==================================================*/
+.visualSearch{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px var(--border);
+    color: var(--text-color);
+    cursor: pointer;
+}
+.visualSearch .graphs{
+    display: flex;
+}
+.visualSearch .graphs p{
+    padding: 0px 3px;
+    color: var(--text-color);
+}
+.visualSearch p{
+    border-left: solid 1px var(--border);
+}
+.visualSearch p i{
+    font-size:0.8rem; 
+    padding: 0px 3px;
+}
+
+.dataInput{
+    border: solid 1px var(--border);
+    padding: 3px;
+}
+.dataInput .dataTop{
+    display: flex;
+}
+.dataInput hr{
+    color: var(--text-color);
+}
+.dataInput .dataTop p{
+    color: var(--text-color);
+    padding: 0px 3px;
+}
+.dataInput .dataTop p i{
+    font-size:0.8rem; 
+}
+.dataBody p{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0px 10px;
+}
+.inputSection input{
+    width: 100%;
+    border: solid 1px var(--border);
+    outline: none;
+    background: var(--darkmode);
+    color: var(--text-color);
+    border-radius: 3px;
+}
+
+.inputSection p{
+    padding: 0px;
+    font-size: 1rem;
+}
+.settingsDiv hr{
+    color: var(--text-color);
+}
+.settingsDiv{
+    color: var(--text-color);
+    display: none;
+}
+.settingsText p{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+/*===================================================*/
+.diffGraphs{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background-color: var(--insideDiv);
+    z-index: 1;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0px 3px;
+
+}
+.diffGraphs a{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+}
+
+.diffGraphs a p{
+    border: none;
+}
+
+.diffGraphs a i{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.diffGraphs a:hover{
+    background-color: var(--darkmode);
+}
+/*=========================================|
+--------------- Bottom -------------------
+==========================================*/
+.bottom{
+    background-color: var(--insideDiv);
+    border: solid 1px var(--border);
+    padding: 3px;
+}
+.bottom hr{
+    color: var(--text-color);
+}
+.addfile{
+    display: flex;
+    padding: 0px 0px 10px;
+}
+.dataSource{
+    width: fit-content;
+    padding: 0px 3px 0px 0px;
+}
+.dataSource p{
+    border: solid 1px var(--border);
+    color: var(--text-color);
+    padding: 0px 3px;
+}
+.importDiv{
+    color: var(--text-color);
+}
+#DropSelct{
+    outline: none;
+    background-color: var(--darkmodePage);
+    color: var(--text-color);
+    border: solid 1px var(--border);
+    padding: 1px;
+}
+.fileDiv{
+    display: flex;
+    padding: 20px 0px 0px;
+}
+.fileDiv .textHere{
+    color: var(--text-color);
+    border: solid 1px var(--border);
+}
+.importHere{
+    padding: 0px 3px 0px;
+}
+.importHere input{
+    display: none;
+}
+.importHere label{
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.inputSection hr{
+    margin: 0;
+    color: transparent;
+    padding: 5px;
+}
+@media(max-width:710px) {
+    *{
+        font-size: 0.7rem;
+    }
+    #ghg_header{
+        justify-content: end;
+    }
+    .directory_tracker{
+        display: none;
+    }
+    #sidebar {
+        width: 40px;
+    }
+    .company_logo img {
+        width: 25px;
+    }
+    .ghg_supply_body {
+        margin-left: 40px;
+    }
+    
+    .visual header p{
+        font-size: 1.1rem;
+    }
+    .inputSection p {
+        font-size: 0.7rem;
+    }
+    .dataBody p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 2px 0px 2px;
+    }
+}

@@ -1,0 +1,119 @@
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #99cb33;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #d4d1d1;
+    --darkmode: #1f1e1e;
+    --darkmodePage: #0f0f0f;
+    --hover: rgb(44, 43, 43);
+    --border: rgb(56, 55, 55);
+    --insideDiv: rgb(37, 36, 36);
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+html, body{
+    height: 100%;
+    background-color: var(--darkmode);
+}
+
+/*-----------parent Body-------------*/
+.main {
+    margin-left: 60px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    height: 100%; /* Defoult same height as screen */
+    background-color: var(--darkmodePage);
+    padding: 20px 20px 0px;
+}
+
+/*-----------Searchbar-------------*/
+
+#searchBar input{
+    background-color: transparent;
+    width: 100%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: none;
+    font-size: 19px;
+    color: var(--text-color);
+}
+
+/*----------- Header -------------*/
+
+.format{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.folderFormat{
+    display: flex;
+    border: solid 1px rgb(56, 55, 55);
+}
+.folderFormat .formats{
+    padding: 3px;
+}
+.folderFormat .formats p{
+    color: var(--text-color);
+    padding: 0px 3px;
+    cursor: pointer;
+}
+
+.folderFormat .filter{
+    display: flex;
+}
+.folderFormat .filter p{
+    color: var(--text-color);
+    padding: 0px 3px;
+}
+
+/*----------- Body -------------*/
+.recentDiv{
+    width: 100%;
+    background-color: var(--darkmode);
+    border: solid 1px rgb(56, 55, 55);
+    padding: 10px;
+    border-radius: 3px;
+
+}
+.recentDiv header {
+    width: 100%;
+}
+.recentDiv header .recentText{
+    display: flex;
+    align-content: center;
+}
+.recentDiv header .recentText p{
+    padding: 3px;
+    color: var(--text-color);
+    font-size: 14px;
+}
+.recentDiv{
+    color: var(--text-color);
+}
+
+main .content{
+    padding: 10px 20px;
+    display: block;
+}
+main .content p{
+    color: var(--text-color);
+    padding: 10px 0px;
+}

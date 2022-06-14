@@ -1,189 +1,745 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overlayh">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Welcome to Decarbonify</title>
+    <meta content="esg japanese" name="esg 投資">
+    <meta content="https://trends.google.com/trends/explore?q=esg+metaux&date=today+1-m" name="esg">
+    <meta content="esg data analytics" name="esg-data">
+    <meta content="esg risk rating" name="esg risk">
+    <meta content="esg materality" name="esg materality">
+    <meta content="esg rating" name="esg materality">
+    <meta content="ESG 365" name="ESG 365">
+    <meta content="esg intelligent" name="intelligent" description="platform for esg intelligent">
+    <meta content="www.decarbonify.com" name="decarbonify" description="platform for esg">
+    <meta content="esg profile" name="esg profile">
+    <!-- Favicons -->
+    <link href="/assets/img/deca-logo.png" rel="icon">
+    <link href="/assets/img/deca-logo.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/homeStyle.css" rel="stylesheet">
+    <link href="/assets/css/esgSection.css" rel="stylesheet">
+    <link href="/assets/css/homeUpdates.css" rel="stylesheet">
+    <link href="/assets/css/teamSection.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/typewriter.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <meta name="generator" content="WPML ver:4.4.12 stt:1,3;">
+    <script>
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
+    <!-- Banner dependencies -->
+    <link href="/assets/css/banner.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- End of Banner dependencies -->
+    
+    <style>
+        html {
+            overflow: scroll;
+            overflow-x: hidden;
+            }
+            ::-webkit-scrollbar {
+            width: 0px; /* remove scrollbar space /
+            background: transparent; / optional: just make scrollbar invisible /
+            }
+            / optional: show position indicator in red */
+            ::-webkit-scrollbar-thumb {
+            background: #FF0000;
+            }
+        
+    </style>
+    
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-    .margin{
-        margin: 45% 0;
-    }
-    .parallel{
-        background: url("https://th.bing.com/th/id/R.c3fa93c3d85e59ae7a19524548228338?rik=0rm%2frZhgKVn5qA&riu=http%3a%2f%2fi.imgur.com%2fYut3Pxf.jpg&ehk=iSr7Z%2fO25tCjUg7FHzG7ueaT1WzrOuQKfuAQ%2fbQrV%2f0%3d&risl=&pid=ImgRaw&r=0")
-        repeat fixed 100%;
 
-    }
-    .parallel-inner{
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-</style>
-<style>
-  .wrapper {
-  background: url(Anders.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  height: 300px;
-  width: 250px;
-  box-shadow: 0 15px 20px 5px rgba(0,0,0,0.5);
-}
-.wrappers {
-background: url(Kaluiji.jpg);
--webkit-background-size: cover;
-background-size: cover;
-background-position: center center;
-height: 300px;
-width: 250px;
-box-shadow: 0 15px 20px 5px rgba(0,0,0,0.5);
-}
-.wrapperss {
-background: url(SumitRoy.jpg);
--webkit-background-size: cover;
-background-size: cover;
-background-position: center center;
-height: 300px;
-width: 250px;
-box-shadow: 0 15px 20px 5px rgba(0,0,0,0.5);
-}
-      .box {
-          background: #262626;
-          width: 230px;
-          padding: 10px;
-          clip-path: circle(5% at 91% 7%);
-          transition: all .5s ease-in-out;
-          cursor: pointer;
-          height: 300px;
-      }
-              .content {
-          text-align: center;
-          padding: 5px 5px;
-      }
-      .box:hover{
-        clip-path:circle(75%);
-        background:darkgreen;
-      }
-      
-      .box:hover span{
-        color:rgba(255,255,255,0);
-      }
-      .box span {
-          float: right;
-          color: white;
-          font-weight: bold;
-          transition: color .5s;
-          position: relative;
-          margin-right: 2%;
-      }
-      
-      .box h2{
-        color:#fff;
-      }
-      .box p {
-          color: #fff;
-          font-size: 11px;
-          text-align: justify;
-          line-height: 2;
-      }
-              .social {
-        text-align: center !important;
-        margin-top: 5px;
-      }
-      .social i {
-        font-size: 20px;
-        margin: 0 5px;
-      }
-      
-</style>
+<script defer data-domain="decarbonify.com" src="https://plausible.io/js/plausible.js"></script>
 <body>
-    <div class="margin"></div>
-    <section class="parallel">
-        <div class="parallel-inner">
-            <div class="container">
-                <div class="row g-5">
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="wrapper">
-                       <div class="box">
-                         <div class="content">
-                           <br>
-                             <h3>Anders C. Sørby</h3>
-                             <hr>
-                         <h3>CTO</h3>
-                         <h3>Co-Founder</h3>
+
+    <!--- Loader -->
+    <div class="loader">
+        <div class="mycontainer">
+            <div class="ball"><img src="assets/img/deca-logo.png" alt=""></div>
+        </div>
+        <div class="myShadow">
+            <div class="shadows"></div>
+        </div>
+        
+    </div>
+    <img style="display: none;" src="https://source.unsplash.com/200x200" alt=""> <!--for longer loding time-->
+  <!--- End loader -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            
+            <a style="text-decoration: none;">
+                <img src="/assets/img/deca-logo.png" width="50px">
+                <p style="color: #fff;">Decarbonify</p>
+            </a>
+            
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.1" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+                    <li><a class="nav-link scrollto" href="#map">Data Points</a></li>
+                    <li><a class="nav-link scrollto" href="#ESG">ESG Solutions</a></li>
+                    <li><a class="nav-link scrollto" href="#">Technology</a></li>
+                    <li><a class="nav-link scrollto" href="#team" >Team</a></li>
+                    <li><a class="nav-link scrollto" href="#" >Blogs</a></li>
+                    
+                    <li> <a href="#contact" class="nav-link scrollto"><span style="background-color: #51a366" id="contact-item">Get in touch</span> </a></li>
+                    <li>
+                      <!--<a href="cominsoon" class="get-started-btn scrollto">Sign up</a>-->
+                      <a href="https://django.decarbonify.com/login">Login</a>
+                    </li>
+                </ul>
+
+                <i class="bi bi-list mobile-nav-toggle"></i>
+
+
+            </nav>
+            <!-- .navbar -->
+
+
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+
+    <section id="banner" class="d-flex align-items-center justify-content-center">
+
+
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="140">
+                <div id="bannert" class="col-md-12  col-lg-12">
+                    
+                    
+                    <p>Environmental, Social and Governance (ESG)</p>
+                    <h1 class="typing"></h1>
+
+                </div>
+
+
+
+
+
+
+                <div id="particles-js">
+                    <canvas id="canva" class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="2592" height="500"></canvas>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+        <!-- ======= map ======= -->
+        <section>
+            <strong><h1 data-aos="fade-up" >ESG Data Access Points</h1></strong>
+            <div id="map" class="map">
+                <img src="/assets/img/map.jpeg" alt="">
+                <div class="glow">
+                        <div class="envStats">
+                        <ul class="one">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>GHG emissions</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="second">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>GHG supply chain</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="third">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Resource use</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="four">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Waste production</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="five">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Energy sources</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="six">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Land use</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div class="socStats">
+                    <ul class="seven">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Human rights issues</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="eight">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Modern slavery</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nine">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Child labor</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="ten">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Working conditions</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="eleven">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Employee relations</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="twelve">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Diversity – gender, racial, etc.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="thirteen">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Discrimination policies</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="fifteen">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Product quality and safety</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="sixteen">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Workplace safety</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="seventeen">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Responsible marketing</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="eighteen">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Human rights in the supply chain</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="ninteen">
+                        <li class="blinker">
+                            <div class="content">
+                                <p>Board diversity</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                    <div class="govStats">
+                        <ul class="twenty">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Bribery and corruption policies</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentyone">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Board structure</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentytwo">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Board quality</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentythree">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Board size</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentyfour">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Board independence </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentyfive">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Executive and director pay</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentysix">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Say on pay</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentyseven">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Whistleblower policy</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentyeight">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>ESG disclosure policies</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="twentynine">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Shareholder rights</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="thirty">
+                            <li class="blinker">
+                                <div class="content">
+                                    <p>Balancing of stakeholder interests</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                </div>
+
+                <div class="menu">
+                    <input type="checkbox" id="toggle" />
+                    <label id="show-menu" for="toggle">
+                   
+                    <div id="clicks" style="z-index: 20;" class="btn">
                         
-                         <hr>
-                         <footer>
-                          <p class="social">
-                            <i class="bi bi-linkedin"></i>
-                          </p>
+                        <i class="material-icons md-36 toggleBtn menuBtn">
+                            <i style="color: rgb(166, 160, 160);" class="fa-solid fa-earth"></i>
+                        </i>
+                        <i  id="theRisks" style="z-index: 20;" class="material-icons md-36 toggleBtn closeBtn">
+                            <p>All</p>
+                        </i>
+                        <div style="z-index: 19;" class="orbit"></div>
+                    </div>
+                
+                    <div id="environ" class="btn">
+                        <i class="material-icons md-36">
+                            <p>Environmental</p>
+                        </i>
+                    </div>
+                    <div id="soc" class="btn">
+                        <i class="material-icons md-36">
+                            <p>Social</p>
+                        </i>
+                    </div>
+                    <div id="govern" class="btn">
+                        <i class="material-icons md-36">
+                            <p>Governance</p>
+                        </i>
+                    </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <!-- ======= end map ======= -->
+        <!-- ======= ESG ======= -->
+        <section id="ESG" class="ESG">
+        <strong><h1 data-aos="fade-up" >ESG Solutions</h1></strong>
+        <div class="ESGcontent">
+            <div class="row g-5">
+            <div class="col-xxl-6 col-lg-6 col-md-6">
+                <div class="inner-content" data-aos="fade-up" >
+                <h2>Environmental</h2>
+                <p>
+                    The impact that a company has on the natural environment, either through its operations, supply chain or products.
+                </p>
+                <ul>
+                    <li>Greenhouse gas (GHG) emissions (e.g., carbon, methane) of operations</li>
+                    <li>GHG emissions of supply chain</li>
+                    <li>Resource use (e.g., energy, water)</li>
+                    <li>Waste production (plastic, other non-recyclables sent to landfill, toxic waste production and disposal)</li>
+                    <li>Energy sources (coal, fossil fuels, renewables, etc.)</li>
+                    <li>Land use</li>
+                    <li>Other high-profile risks (oil spills, mine reclamation, deforestation, water pollution)</li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-lg-6 col-md-6">
+                <div class="inner-content contents" data-aos="fade-up" >
+                <img src="/assets/img/features.jpg" alt="">
+                </div>
+            </div>
+            </div>
+            <br><br>
+            <div class="row g-5">
+            <div class="col-xxl-6 col-lg-6 col-md-6">
+                <div class="inner-content contents" data-aos="fade-up" >
+                <img src="/assets/img/hero-bg.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-xxl-6 col-lg-6 col-md-6">
+                <div class="inner-content" data-aos="fade-up" >
+                <h2>Social</h2>
+                <p>
+                    The impact that a company has on stakeholders, both internal (e.g. employees) and external (e.g. customers).
+                </p>
+                <ul>
+                    <li>Human rights issues</li>
+                    <li>Modern slavery</li>
+                    <li>Child labor</li>
+                    <li>Working conditions</li>
+                    <li>Employee relations</li>
+                    <li>Diversity – gender, racial, etc.</li>
+                    <li>Discrimination policies</li>
+                    <li>Product quality and safety</li>
+                    <li>Workplace safety</li>
+                    <li>Responsible marketing</li>
+                    <li>Human rights in the supply chain</li>
+                    <li>Board diversity</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <br><br>
+            <div class="row g-5">
+            <div class="col-xxl-6 col-lg-6 col-md-6">
+                <div class="inner-content" data-aos="fade-up" >
+                <h2>Governance</h1>
+                    <p>
+                        The systems governing the implementation, monitoring and reporting of rules and practices put in place by a company.
+                    </p>
+                    <ul>
+                        <li>Bribery and corruption policies and practices</li>
+                        <li>Board structure</li>
+                        <li>Board quality and experience</li>
+                        <li>Board size</li>
+                        <li>Board independence (insiders vs independent directors)</li>
+                        <li>Executive and director pay</li>
+                        <li>Say on pay</li>
+                        <li>Whistleblower policy</li>
+                        <li>ESG disclosure policies</li>
+                        <li>Shareholder rights</li>
+                        <li>Balancing of stakeholder interests</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-lg-6 col-md-6">
+                <div class="inner-content contents" data-aos="fade-up" >
+                <img src="/assets/img/about1.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
 
-                         </footer>
-                         </div>
-                      </div>
-                    </div>  
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="wrappers">
-                       <div class="box">
-                         <div class="content">
-                           <br>
-                             <h3>Kenny Kaluiji</h3>
-                             <hr>
-                         <h3>CEO</h3>
-                         <h3>Co-Founder</h3>
-                         <br>
-                         <hr>
-                         <footer>
-                          <p class="social">
-                            <i class="bi bi-linkedin"></i>
-                          </p>
+        </section>
+        <br>
+        <!-- ======= End ESG ======= -->
+        
+        <!-- ======= Team Section ======= -->
+        
+        <section>
+            <div id="team">
+                <strong><h1 data-aos="fade-up">Team</h1></strong>
+                <div class="ontainer">
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="/assets/img/avatar.png" alt="">
+                                <div class="card-title">
+                                    <h3>Anders Sorby</h3>
+                                    <h2>CTO</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>fdjhgf jfhjfh jfh jhfu hfuhj hj fhjkfh fklfghfjhf</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="/assets/img/avatar.png" alt="">
+                                <div class="card-title">
+                                    <h3>Kenny Kaluiji</h3>
+                                    <h2>CEO</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>fdjhgf jfhjfh jfh jhfu hfuhj hj fhjkfh fklfghfjhf</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="/assets/img/avatar.png" alt="">
+                                <div class="card-title">
+                                    <h3>Sumit Roy</h3>
+                                    <h2>CFO</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>fdjhgf jfhjfh jfh jhfu hfuhj hj fhjkfh fklfghfjhf</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="teamliner">
+                    <div data-aos="fade-up" class="myteam">
+                        <div class="image-area">
+                            <div class="img-wrapper">
+                                <img src="/assets/img/Management/Anders.jpg" alt="Atul Prajapati">
+                                <h2>
+                                    <div>Anders Sorby</div>
+                                    <div>cto (co-founder)</div>
+                                </h2>
+                                <ul>
+                                    <li><a href="#"><i class="fa-solid fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="myteam">
+                        <div class="image-area">
+                            <div class="img-wrapper">
+                                <img src="/assets/img/Management/kenny.jpg" alt="Atul Prajapati">
+                                <h2>
+                                    <div>kenny kaluiji</div>
+                                    <div>ceo (co-founder)</div>
+                                </h2>
+                                <ul>
+                                    <li><a href="#"><i class="fa-solid fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="myteam">
+                        <div class="image-area">
+                            <div class="img-wrapper">
+                                <img src="/assets/img/Management/SumitRoy.jpg" alt="Atul Prajapati">
+                                <h2>
+                                    <div>Sumit roy</div>
+                                    <div>cfo (co-founder)</div>
+                                </h2>
+                                <ul>
+                                    <li><a href="#"><i class="fa-solid fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </section>
+       
+       <br>
+        <!-- ======= End Team Section ======= -->
 
-                         </footer>
-                         </div>
-                      </div>
-                    </div>  
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="wrapperss">
-                       <div class="box">
-                         <div class="content">
-                           <br>
-                             <h3>Summit Roy</h3>
-                             <hr>
-                         <h3>CFO</h3>
-                         <h3>Co-Founder</h3>
-                         <br>
-                         <hr>
-                         <footer>
-                          <p class="social">
-                            <i class="bi bi-linkedin"></i>
-                          </p>
+        <!-- ======= Contact Section ======= -->
+        
+        <section id="contact" class="contact">
+            <h2 class="heading1" style="color: var(--foreground);"><strong>Get In Touch</strong> </h2>
+            <div class="container" data-aos="fade-up">
 
-                         </footer>
-                         </div>
-                      </div>
-                    </div>  
-                  </div>
+
+
+                <div class="row mt-5">
+
+                    <div class="col-lg-4">
+                        <div class="info" style="background: var(--background); color: var(--foreground);">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4 style="color: var(--foreground);">Location:</h4>
+                                <p style="color: var(--foreground);">Oslo, Norway</p>
+                            </div>
+
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4 style="color: var(--foreground);">Email:</h4>
+                                <p style="color: var(--foreground);">info@decarbonify.com</p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4 style="color: var(--foreground);">Call:</h4>
+                                <p style="color: var(--foreground);">+47 40 899 458</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+
+                        <form action="https://django.decarbonify.com/contact-form" method="post" style="background: var(--background); color: var(--foreground);" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder=" Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-left"><button type="submit" class="get-started-btn">Send Message</button></div>
+                        </form>
+
+                    </div>
+
                 </div>
 
             </div>
+        </section>
+        <!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer class="inverted" id="footer">
+        <div class="footer-top">
+            <a href="/" style="margin-left: 50%;">
+                <center>
+                    <img src="/assets/img/deca-logo.png" width="70px">
+                </center>
+
+            </a>
+            <div class="container">
+
+                <hr>
+                <center>
+                    <div class="social-links mt-3">
+                        <a href="https://twitter.com/decarbonify" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://www.instagram.com/decarbonify/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/decarbonify/mycompany/?viewAsMember=true" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </center>
+            </div>
         </div>
-    </section>
-    <div class="margin"></div>
 
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Decarbonify</span></strong>. All Rights Reserved.
+            </div>
+            <div class="credits">
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            </div>
+        </div>
+    </footer>
 
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+
+    <script src="/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/typer.js"></script>
+    <script src="/assets/js/homeupdate.js"></script>
+    <script src="/js/loading.js"></script>
+    <script type="text/javascript" src="/assets/js/bannerjs.js"></script>
 </body>
+
 </html>

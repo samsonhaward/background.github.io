@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/purchasedGoods.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ghg_emission_supply_chain</title>
+    
+  </head>
+  <style>
+  p{
+    margin-bottom: 0;
+  }
+  hr{
+      margin: 0;
+  }
+  </style>
+  <body>
+    <!-- Sidebar -->
+  <nav id="sidebar">
+    <header>
+      <span class="company_logo">
+        <img src="/assets/img/deca-logo.png" alt="">
+      </span>
+    </header>
+    <main>
+      <br><br><br>
+      <div  class="icon">
+        <a href="/search.html"><i style="color: #d4d1d1;" class="fa-solid fa-search"></i></a>
+        <div id="show">
+          <div id="showsSingle">
+            <a href="/search.html">
+              <p>Search</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="active" class="icon">
+        <a href="#"><i style="color: #d4d1d1;" class="fa-solid fa-cube"></i></a>
+        <div id="show">
+          <div id="shows">
+            <p>Dashboards</p>
+            
+            <a href="#">ESG Risk Rating</a>
+            <a href="/esg_factors.html">ESG Factors</a>
+            <a href="#">ESG Intelligence</a>
+            <a href="#">ESG 365</a>
+          
+        </div>
+        </div>
+      </div>
+
+      <div class="icon">
+        <a href="#">
+          <i style="color: #d4d1d1;" class="fa-solid fa-plug"></i>
+        </a>
+        <div id="show">
+          <div id="showsSingle">
+            <a href="#">
+              <p>API</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="icon">
+        <a href="#"><i style="color: #d4d1d1;" class="fa-solid fa-infinity"></i></a>
+        <div id="show">
+          <div id="shows">
+            <p>Asset Manager</p>
+            
+            <a href="/climate_risk.html">Climate Risk</a>
+            <a href="#">Assets</a>
+            <a href="#">Impact Score</a>
+            <a href="#">Risk Score</a>
+            <a href="#">Taxonomy Score</a>
+            <a href="#">ESG Highlights</a>
+            <a href="#">Ranking</a>
+            <a href="#">SDG Score</a>
+            <a href="#">Carbon Market</a>
+          
+        </div>
+        </div>
+      </div>
+
+      <div class="icon">
+        <a href="#"><i style="color: #d4d1d1;" class="fa-solid fa-earth"></i></a>
+        <div id="show">
+          <div id="shows">
+            <p>ESG Standards</p>
+            
+            <a href="#">Regulation</a>
+            <a href="#">Reporting</a>
+            <a href="#">Compliance</a>
+          
+        </div>
+        </div>
+      </div>
+
+      <div class="icon">
+        <a href="#"><i style="color: #d4d1d1;" class="fa-solid fa-people-group"></i></a>
+        <div id="show">
+          <div id="shows">
+            <p>Invite Users</p>
+            
+            <a href="#">Internal Users</a>
+            <a href="#">External Users</a>
+          
+        </div>
+        </div>
+      </div>
+
+      <div style="position:absolute; bottom: 0;left: 0;" class="icon">
+        <a href="#"><i style="color: #d4d1d1;" class="fa-solid fa-question"></i></a>
+        <div id="showHelp">
+          <div id="shows">
+            
+            <a href="#">Advisors</a>
+            <a href="#">Support</a>
+            <p>Help</p>
+          
+        </div>
+        </div>
+      </div>
+
+
+    </main>
+  </nav>
+      
+  <!-- Page content -->
+    <div class="ghg_supply_body">
+        <header id="ghg_header">
+                <div class="directory_tracker">
+                    <p><i style="color: #d4d1d1;" class="fa-solid fa-cube"></i></p>
+                    <p>Dashboard/</p>
+                    <a href="/esg_factors.html"><p>.../ </p></a>
+                    <a href="/ghg_supply_chain.html"><p>GHG Emissions (Supply Chain)/ </p></a>
+                    <a href=""><p>Edit </p></a>
+                    <a href=""><p><i class="fa-solid fa-share-nodes"></i></p></a>
+                </div>
+                <div class="additional">
+                    <div class="bars">
+                        <div id="dashSettings" class="drop-main">
+                            <p><i style="color: #d4d1d1;" class="fa-solid fa-tools"></i></p> 
+                            <div class="drop">
+                               <p>Open Dashboard Settings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="drop-main">
+                            <p>Discard</p>
+                            <div class="click-drop">
+                            </div>
+                            <div class="drop-middle">
+                                <p>Undo all changes</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="drop-main">
+                            <div class="click-drop">
+                            </div> 
+                            <p>Save</p>
+                            
+                            <div class="drop-middle">
+                                <p>Save all changes</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="drop-main">
+                            <p>Apply</p>  
+                            <div class="drop">
+                                <p>Apply and save changes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </header>
+
+        <main>
+            <br><br><br>
+            <div class="row g-3">
+                <div class="col-xxl-8 col-lg-8 col-md-8  col-sm-7">
+                    <div class="upper">
+                        <div class="spacer">
+                            <div class="upperContent">
+                                <p>Import Data</p>
+                            </div>
+                        </div>
+                        <div class="spacer">
+                            <div class="upperContent">
+                                <p>Download</p>
+                            </div>
+                        </div>
+                        <div class="spacer">
+                            <div class="upperContent">
+                                <p><i style="color: #d4d1d1;" class="fa-solid fa-arrows-rotate"></i></p>  
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="scope">
+                        <div class="visual">
+                            <header>
+                                <p class="myScope">Purchased Goods & Services</p>
+                                
+                            </header>
+                            <main>
+                                <div class="visualization">
+                                    <p>Visual here</p>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="bottom">
+                      <div class="addfile">
+                        <div class="dataSource">
+                          <p>Data Source</p>
+                        </div>
+                        <div class="importDiv">
+                          <select name="" id="DropSelct">
+                            <option value="CSV">CSV</option>
+                            <option value="Excel">Excel</option>
+                          </select>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="fileDiv">
+                        <div class="textHere">
+                          <p>Import File</p>
+                        </div>
+                        <div class="importHere">
+                          <input type="file" name="" id="importing" accept="file">
+                          <label class="" for="importing" id="">Browse File</label>
+                        </div>
+                      </div>
+                      <br><br>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-4 col-md-4  col-sm-5">
+                    <div class="upper">
+                        <div class="visualSearch">
+                          <div class="graphs">
+                            <p><i style="color: #d4d1d1;" class="fa-solid fa-chart-column"></i></p>
+                            <p>Choose Graphs</p>
+                            <div class="diffGraphs">
+                              <a href="#">
+                                <i style="color: #d4d1d1;" class="fa-solid fa-chart-column"></i>
+                                <p>Bar graph</p>
+                              </a>
+                              <a href="#">
+                                <i style="color: #d4d1d1;" class="fa-solid fa-chart-column"></i>
+                                <p>Bar graph</p>
+                              </a>
+                              <a href="#">
+                                <i style="color: #d4d1d1;" class="fa-solid fa-chart-column"></i>
+                                <p>Bar graph</p>
+                              </a>
+                              <a href="#">
+                                <i style="color: #d4d1d1;" class="fa-solid fa-chart-column"></i>
+                                <p>Bar graph</p>
+                              </a>
+                            </div>
+                          </div>
+                          <p><i class="fa-solid fa-chevron-down"></i></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="dataInput">
+                      <div class="dataTop">
+                        <p><i class="fa-solid fa-chevron-down"></i></p>
+                        <p>Panel options</p>
+                      </div>
+                      <hr>
+                      <div class="settingsDiv">
+                        <div class="settingsText">
+                          <p>Settings</p>
+                        </div>
+                        <br>
+                        <div class="theSettings">
+                          <p>Those settings here</p>
+                        </div>
+                        <hr>
+                      </div>
+                      <div class="dataBody">
+                        <p>Add Science-Based Target</p>
+                        <div class="inputSection">
+                          <p>1.5 Degree C Scenario</p>
+                          <input type="text">
+                          <hr>
+                          <input type="text">
+                          <hr>
+                          <p>2 Degree Scenario</p>
+                          <input type="text">
+                          <hr>
+                          <input type="text">
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </main>
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/purchasedGoods.js" defer></script>
+  </body>
+</html>

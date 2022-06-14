@@ -1,0 +1,23 @@
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #99cb33;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #d4d1d1;
+    --darkmode: #1f1e1e;
+    --darkmodePage: #0f0f0f;
+    --hover: rgb(44, 43, 43);
+    --border: rgb(56, 55, 55);
+    --insideDiv: rgb(37, 36, 36);
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+.collapsible {
+    padding: 5px;
+}
